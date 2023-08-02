@@ -1,4 +1,4 @@
-@import"https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap";*{margin:0;padding:0}html{overflow-x:initial;min-height:100vh}body{overflow-x:hidden}@charset "UTF-8";/*!
+@import"https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap";@import"https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=REM:ital,wght@0,400;0,700;1,400&display=swap";*{margin:0;padding:0;font-family:REM,sans-serif}html{overflow-x:initial;min-height:100vh}body{overflow-x:hidden}.logo{padding:.5rem 2rem;margin:1rem;font-family:Merriweather,serif}.nav-items{list-style-type:none;padding:0;margin:0}.nav-item{transition:background .5s}.nav-item>a{padding:.5rem 1rem;color:#000;text-decoration:none;position:relative;transition:.3s}.nav-item>a:hover{color:#000}.nav-item>a:after{content:"";position:absolute;height:3px;width:0%;background-color:#000;left:0;top:100%;transition:.3s}.nav-item>a:hover:after{width:100%}@charset "UTF-8";/*!
 * Bootstrap  v5.3.1 (https://getbootstrap.com/)
 * Copyright 2011-2023 The Bootstrap Authors
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)

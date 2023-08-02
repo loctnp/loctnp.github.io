@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=REM:ital,wght@0,400;0,700;1,400&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'REM',sans-serif;
 }
 html{
     overflow-x: initial;
@@ -10,4 +12,43 @@ html{
 }
 body{
     overflow-x: hidden;
+}
+
+.logo{
+    /* margin: .5rem; */
+    padding: .5rem 2rem;
+    margin: 1rem;
+    font-family: 'Merriweather', serif;
+}
+.nav-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-item{
+    /* margin: .5rem 0; */
+    transition: background .5s;
+}
+.nav-item>a{
+    padding: .5rem 1rem;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transition: .3s;
+}
+.nav-item>a:hover{
+    color: black;
+}
+.nav-item>a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color: black;
+    left: 0;
+    top: 100%;
+    transition: .3s;
+}
+.nav-item>a:hover::after{
+    width: 100%;
 }

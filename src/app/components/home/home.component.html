@@ -1,0 +1,76 @@
+<div id="home" class="intro row d-flex justify-content-between" style="margin-top: 72px!important;">
+    <div class="col-4 overflow-hidden">
+      <img style="max-height: 100%; max-width: 100%; " src="../assets/loc.png" alt="">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center ">
+      <h1>Ta Nguyen Phu Loc</h1>
+      <!-- <ul class="text-container">
+        <li class="h5">Web developer</li>
+        <li class="h5">Mobile app developer</li>
+        <li class="h5">Data Engineer</li>
+      </ul> -->
+      <h5 class="blink">I'm a <span class="text-primary">{{this.displayText}}</span></h5>
+      <div class="row">
+        <button class="intro-cta btn bg-dark text-light">Hire me</button>
+        <button class="intro-cta btn border border-dark text-dark">Explore more</button>
+      </div>
+    </div>
+    
+  </div>
+  <main>
+    <section id="about" class="d-flex flex-column my-5">
+      <h1 class="text-center">About</h1>
+      <p class="text-center w-50 align-self-center">
+        Hello! I'm Phu Loc, a Vietnamese Web Developer, Mobile App Developer and Data Engineer. I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.
+      </p>
+      <button class="intro-cta btn bg-dark text-light align-self-center">Download my CV</button>
+    </section>
+    <section id="skill" class="d-flex flex-column my-5">
+      <h1 class="text-center">My skills</h1>
+      <div class="d-flex align-items-start" style="flex-wrap: wrap;">
+        <div class="skill col-lg-4 col-md-6 col-sm-12 p-3" *ngFor="let skill of skills">
+          <h3>{{skill.name}}</h3>
+          <div class="d-block" style="width: 100%; background-color: lightgray; height: 1rem;">
+            <div class="bg-dark d-block h-100" [style.width.%]="skill.score*100"></div>
+          </div>
+          <!-- <span>{{skill.comment}}</span> -->
+        </div>
+      </div>
+      <h5 class="mx-5">
+        *How I assess my skills
+      </h5>
+      <ul class="mx-5">
+        <li>9-10/10: those with which I have been working all the time</li>
+        <li>7-8/10: those with which I recently work, kinda well but I still need time to explore advanced features</li>
+        <li>5-6/10: those with which I sometimes work</li>
+      </ul>
+    </section>
+    <section id="service" class="d-flex flex-column container border shadow-lg py-5">
+      <h1 class="text-center">What I do</h1>
+      <div class="row p-5">
+        <div class="col-4 d-flex flex-column align-items-center px-2">
+          <img src="../assets/icons8_imac_40px.png" alt="">
+          <h1>Websites</h1>
+          <p class="text-center">As a full stack web developer, I have experience in making responsive websites using different front-end techniques. For back-end, I usually use NodeJS to create clean RESTful APIs.</p>
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center px-2">
+          <img src="../assets/icons8_mobile_40px.png" alt="">
+          <h1>Mobile Apps</h1>
+          <p class="text-center">As a Mobile developer, I have written Android apps, most of which are beautiful E-commerce apps, using Java and React Native.</p>
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center px-2">
+          <img src="../assets/icons8_stack_40px.png" alt="">
+          <h1>Data</h1>
+          <p class="text-center">As a Data Engineer, I am usually requested to collect, cleanse and visualize data using charts and graphs, as well as describe the collected results in reports.</p>
+        </div>
+      </div>
+
+    </section>
+    <section id="portfolio" class="d-flex flex-column my-5">
+      <h1 class="text-center">My recent works</h1>
+    </section>
+    <section id="contact" class="d-flex flex-column my-5">
+      <h1 class="text-center">Contact</h1>
+      
+    </section>
+  </main>
